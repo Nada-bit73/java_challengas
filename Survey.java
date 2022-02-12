@@ -32,8 +32,8 @@ public class Survey {
         
     }
     public static void measureTheDifference(int coffeeCounter,int fastFoodCounter,double coffeeMoney,double fastFoodMoney){
-         double coffeePersentage = coffeeCounter - fastFoodCounter;
-         double fastFoodPersentage = fastFoodCounter - coffeeCounter;
+         double coffeePersentage = coffeeCounter / fastFoodCounter;
+         double fastFoodPersentage = fastFoodCounter / coffeeCounter;
          double coffeeWeeklyPrice = coffeeMoney*coffeeCounter;
          double fastFoodWeeklyPrice = fastFoodCounter *fastFoodMoney;
         //max is coffee
