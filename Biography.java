@@ -36,7 +36,7 @@ public class Biography  {
        String subject =in.next();
        System.out.println("What is your Grade in "+subject+" ?");
        char grade =in.next().charAt(0);
-       
+        in.close();
        //part 2: Dispaly User’s Biography
       
        System.out.println("Great That is All We Need !\nYour Biography :");
