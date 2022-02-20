@@ -15,11 +15,22 @@ public class Prices {
             {8.99 , 7.99 , 9.49 , 9.99 , 10,99}
         };
         
-        //Print the prices of each row on a separate line:
-        System.out.println("Baking : " + prices[0][0] + " "+ prices[0][1] + " "+ prices[0][2] + " "+ prices[0][3] + " "+ prices[0][4] + " " );
-        System.out.println("Beverage : " + prices[1][0] + " "+ prices[1][1] + " "+ prices[1][2] + " "+ prices[1][3] + " "+ prices[1][4] + " " );
-        System.out.println("Cereals : " + prices[2][0] + " "+ prices[2][1] + " "+ prices[2][2] + " "+ prices[2][3] + " "+ prices[2][4] + " " );
-
+        
+        for(int i = 0 ; i < 3 ; i++){
+            if(i == 0 ){
+               System.out.print("\nBaking:" ); 
+           }else  if(i == 1 ){
+               System.out.print("\nBeverage:" ); 
+           }else if(i == 2 ){
+               System.out.print("\nCereals:" ); 
+           }
+           for(int j = 0 ; j < 5 ; j++){
+           System.out.print( prices[i][j] + " " );
+        } 
+           
+          
+        }
+        
     }
     
 }
