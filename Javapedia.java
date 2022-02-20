@@ -1,6 +1,6 @@
 /*
  * create a program that allow the user to: 
- * 1. enter the number of Figures user want to store 
+ * 1. enter the number of historical figures user want to store 
  * 2.enter the data for each Figure
  * 3.print the complete Figures
  * 4.allow user to seach in Figures by the 'name' 
@@ -24,7 +24,7 @@ public class Javapedia {
         
         String[][] database = new String[num][3];
        
-       
+       //add values to the database
            for(int i = 0 ; i < database.length ; i++){
                System.out.println("Figure "+(i+1)+"\n");
                 int j = 0;
@@ -59,22 +59,11 @@ public class Javapedia {
        print2DArray(database);
         System.out.println("Wh﻿o ﻿do﻿ y﻿ou want infor﻿ma﻿ti﻿on﻿ on? ");
         String nameToFind = in.nextLine();
+        search(database,nameToFind);
         
-        for(int i = 0 ; i < database.length ; i++){
-             
-                 if(database[i][0].equals(nameToFind)){
-           
-                  System.out.print("Name : "+database[i][0]);
-                  
-                  System.out.print("\nDate of birth : "+ database[i][1]);
-               
-                  System.out.print("\nOccupation : "+ database[i][2]);
-              }
-              
-             }
     }
     
-    
+    //view the database elements
     public static void print2DArray(String[][] database){
        System.out.print("\nThese are the values you stored:\n" );
               for(int i = 0 ; i < database.length ; i++){
@@ -101,7 +90,7 @@ public class Javapedia {
         } 
     }
     
-    
+    //search for one elment
     public static void search(String[][] database , String name){
       
         for(int i = 0 ; i < database.length ; i++){
@@ -113,7 +102,10 @@ public class Javapedia {
                   System.out.print("\nDate of birth : "+ database[i][1]);
                
                   System.out.print("\nOccupation : "+ database[i][2]);
-              }
+              }else{
+                     System.out.println("No match found...\n");
+                     break;
+                 }
               
              }
          
