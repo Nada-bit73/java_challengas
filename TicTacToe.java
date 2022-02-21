@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tictactoe;
 
 import java.util.Arrays;
@@ -10,7 +6,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Amcِ
+ * @Nada
  */
 public class TicTacToe {
      
@@ -82,7 +78,7 @@ public class TicTacToe {
 
 
 /**
- * Function name -- askUser <-------
+ * Function name -- askUser 
  * @param board (char[][] board)
  * @return spot (int[])
  *
@@ -131,10 +127,10 @@ public static void write(char[][] board , int[] spot,char symbol){
  *
  * Inside the function:
  *   1. Make a count variable that starts at 0.
- *   2. Check every row for a straight X/O  (Task 7)
- *   3. Check every column for a straight X/O  (Task 8)
- *   4. Check the left diagonal for a straight X/O  (Task 9).
- *   5. Check the right diagonal for a straight X/O  (Task 10).
+ *   2. Check every row for a straight X/O  
+ *   3. Check every column for a straight X/O 
+ *   4. Check the left diagonal for a straight X/O  
+ *   5. Check the right diagonal for a straight X/O  
  */
 public static int checkWin(char[][] board){
    int count = 0;
