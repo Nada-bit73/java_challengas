@@ -36,6 +36,7 @@ public class TicTacToe {
           
           
         }if(checkWin(board) == 1){
+            System.out.println("Thank you for playing with java!!");
             break;
         }
         }
